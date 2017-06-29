@@ -1,5 +1,7 @@
 # Actividad Presencial 2 de la Semana 6
 
+https://github.com/DesafioLatam/Blearning-Frontend-E13CP2A1
+
 La siguiente actividad se compone de dos partes, la primera de un nivel sencillo y la segunda de un nivel más avanzado.
 **Debes realizar al menos una de las actividades.**
 
