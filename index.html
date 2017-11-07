@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Piedra, papel o tijera</title>
+<style>
+	p{
+		text-align: center
+	}
+	h1,
+	h2{
+		font-family: Helvetica;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<h1>Elige una opción</h1>
+	<div>
+		<p>
+			<img onclick="game('rock')" src="piedra.jpg" alt="rock">
+			<img onclick="game('paper')" src="papel.jpg" alt="paper">
+			<img onclick="game('scis')" src="tijera.jpg" alt="scis">
+		</p>
+	</div>
+	<div class="cont_result">
+		<h2 id="result">¿Quién gana?</h1>
+	</div>
+<script>
+
+var options = ['papel', 'tijera', 'piedra'];
+
+function game(element) {
+	var user = element;
+	var pc = options[Math.floor( Math.random() * 3 )];
+	var pcelement = document.createElement('p');
+	var pccont = document.createTextNode('Yo elijo ' + pc);
+	pcelement.appendChild(pccont);
+	document.body.appendChild(pcelement);
+
+
+
+	if (user > pc && user != 0 || user == 0 && pc == 2){
+		result.innerHTML = 'ganaste';
+	} else if(user == pc){
+		result.innerHTML = 'empate';
+	} else{
+		result.innerHTML = 'perdiste'
+	}
+
+}
+
+
+
+
+
+
+</script>
+</body>
+</html>
